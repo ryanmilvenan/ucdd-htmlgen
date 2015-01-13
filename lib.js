@@ -2,11 +2,21 @@ var debug = require('debug')('lib')
 var lib = {}
 
 lib.generateHeading1 = function(text) {
-    return "<h1>" + text + "</h1>"
+    return "<h1>\"" + text + "\"</h1>"
 }
 
 lib.generateHeading = function(level, text) {
-    return "<h" + level + ">" + text + "</h" + level + ">"
+    if (level < 1 || level > 6)
+    {
+    	return "invalid level"
+    	// level shouldn't be less than 1 or greater than 6
+    }
+	else
+	{
+    	return "<h" + level + ">" + text + "</h" + level + ">"
+    	// if valid level, return the text in the specified size
+    	// <h6>some text</h6>
+	}
 }
 
 lib.generateOrderedList = function(arrayOfText) {

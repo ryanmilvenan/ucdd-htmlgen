@@ -22,7 +22,7 @@ debug(result)
 
 result = html.generateOrderedList(arrayOfText)
 debug(result)
-// --> <ol><li>amy</li><li>ben</li><li>cindy</li><li>david</li></uo>
+// --> <ol><li>amy</li><li>ben</li><li>cindy</li><li>david</li></ol>
 
 result = html.generateUnorderedList(arrayOfText)
 debug(result)
