@@ -6,8 +6,8 @@ lib.generateHeading1 = function(text) {
 }
 
 lib.generateHeading = function(level, text) {
-    if ( level > 7 || level < 1) //Making sure that level is between 0 and 7
-        //level shouldn't be less than 1 or greater than 0
+    if ( level > 6 || level < 1) //Making sure that level is between 0 and 7
+        //level shouldn't be less than 1 or greater than 6
     {
         return "Invalid level size"
     }
@@ -59,8 +59,10 @@ lib.generateTable = function(twoDimensionalArrayOfText) {
 }
 
 lib.generateHyperLink = function(url, text) {
-    //return "<a href=\"" + url + "\">" + text + "</a>"
-    return "not yet implemented"
+    //In HTML, <a> </a> is similar to <h></h>....The text goes between the carats
+    //Therefore, the text will refer to the address found in the first <a> carat
+    return "<a href=\"" + url + "\">" + text + "</a>"
+    //return "not yet implemented"
 }
 
 lib.generateFormTextField = function(name) {
