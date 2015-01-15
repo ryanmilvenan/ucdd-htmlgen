@@ -32,7 +32,7 @@ lib.generateOrderedList = function(arrayOfText) //Week 1: Function 3 complete
     //return "not yet implemented"
 }
 
-lib.generateUnorderedList = function(arrayOfText) 
+lib.generateUnorderedList = function(arrayOfText) //Week 1: Function 4 complete
 {//Same as above except that it is an UnorderedList
     var UnOrdList = "<ul>"
     var endlist = "</ul>"
