@@ -21,10 +21,12 @@ lib.generateHeading = function(level, text) {
 
 lib.generateOrderedList = function(arrayOfText) {
     var ol = "<ol>"
+    // ordered list
     arrayOfText.forEach(function(item){
         ol += "<li>" + item + "</li>"
     })
     ol += "</ol>"
+    //
     return ol
 }
 
